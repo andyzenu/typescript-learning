@@ -87,3 +87,27 @@ let fn5: (a: number, b: number) => number;
 fn5 = function (a, b) {
   return a + b;
 }
+
+let arr: number[];
+let arr2: Array<number>;
+
+let tuple: [string, number]; // fixed length and type
+
+enum Gender {
+  male = 0,
+  female = 1
+}
+
+let enum1: {
+  name: string,
+  age: number,
+  gender: Gender
+}
+
+type myType = string | number;
+type myType2 = 1 | 2 | 3;
+
+let m: myType;
+let m2: myType2;
+
+//m2 = 4; // throw an error
